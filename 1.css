@@ -17,7 +17,7 @@ border-radius: 50%;
 background: linear-gradient(to bottom, #ffffff 0%,
 #ffffff 50%,#000000 51%,#000000 100%);
 position: relative;
-margin: 100px auto;
+margin: 100px auto 20px;
 animation-duration: 3s;
 animation-name: spin;
 animation-iteration-count: infinite;
