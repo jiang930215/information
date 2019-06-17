@@ -118,6 +118,7 @@ body {
   background-color: #f35b3f;
   border: 1px solid #f35b3f;  
   height: 100px;
+  margin-top: 50px;
 }
 .footer>p {
   color: #fff;
