@@ -119,13 +119,9 @@ body {
   border: 1px solid #f35b3f;  
   height: 100px;
   margin-top: 50px;
-}
-.footer>p {
   color: #fff;
   font-size: 25px;
+  line-height: 100px;
+  text-align: center;/*文字水平居中 */
   letter-spacing: 2px;
-  font-weight: 300;
-  width: 226px;
-  margin: 0 auto;
-  line-height:100px 
 }
