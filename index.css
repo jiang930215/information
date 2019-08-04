@@ -1,0 +1,285 @@
+.grid {
+  height: 480px;
+}
+.grid-col1 {
+  position: relative;
+  width: 190px;
+  height: 100%;
+  background-color: #6e6568;
+  color: #ffffff;
+  font-size: 12px;   /* 给/颜色大小 */
+}
+/* 特效广告 */
+.ad{
+  position: absolute;
+  width: 250px;
+  height: 480px;
+  top: 0px;
+  left: -250px;
+}
+.ad-r {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  z-index: 999;/*盖过其他图片*/
+  width: 0;
+  height: 480px;
+  background: url(../images/ad-r.jpg);
+/* 图片做动画，添加过渡 */
+transition: all 0.8s;
+}
+.ad:hover .ad-r {
+  width: 990px;
+}
+.grid-col1 ul a {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 0;
+}
+.grid-col1 ul {
+  padding: 7px 0;
+}
+.grid-col1 ul li {
+  padding-left: 12px;
+  height: 29px;
+  line-height: 29px;
+}
+.grid-col1 ul li:hover {
+  background: rgba(240, 228, 228, 0.3);
+}
+.grid-col1 ul li a:hover {
+  color: #c81623;
+}
+.grid-col2 {
+  width: 790px;
+  height: 100%;
+  margin-left: 10px;
+}
+.grid-col2-top {
+  position: relative;
+  width: 790px;
+  height: 340px;
+  margin-bottom: 10px;
+}
+/* 左右图标 */
+.grid-col2-top .left,
+.grid-col2-top .right {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  top: 140px;
+  background: rgb(0, 0, 0, 0.3);
+}
+.grid-col2-top .left{
+  left: 0px;
+}
+.grid-col2-top .right{
+  right: 0px
+}
+.grid-col2-top ul {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: 90px;
+  transform: translateX(-50%);
+  width: 168px;
+  height: 20px;
+  background: rgba(248, 243, 243, 0.3);
+  border-radius: 10px;
+}
+.grid-col2-top ul li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 4px 0px;
+  margin-left: 8px;
+  cursor: pointer;/*鼠标经过变小手*/
+}
+.grid-col2-top ul li:hover {
+  background-color: #db192a;
+}
+.grid-col2-left {
+  width: 390px;
+  height: 130px;
+}
+.grid-col2-right {
+  width: 390px;
+  height: 130px;
+}
+/* 右边模块 */
+.grid-col3 {
+  width: 190px;
+  height: 100%;
+  background-color: #fff;
+}
+.login {
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 15px 0px 15px;
+  position: relative;
+}
+.login .sm {
+  width: 190px;
+  height: 38px;
+  border-radius: 10px;
+  background: url(../images/super.png);
+  position: absolute; 
+  top: -51px;
+  left: 0px;
+}
+.login-t {
+  position: relative;
+  width: 90px;
+  height: 60px;
+  line-height: 20px;
+  font-size: 12px;
+  white-space: nowrap;/*强制一行显示*/
+  overflow: hidden;/*显示不开的隐藏*/
+  text-overflow: ellipsis;/*超出的地方显示省略号*/
+  color: #666;
+  padding-left: 60px;
+}
+.login-t a {
+  color: #666;
+}
+.login-t a:hover{
+  color: #f10512;
+}
+.user-info{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0px;
+}
+.user-info img{
+  width: 40px;
+  border-radius: 50%;
+  /*overflow: hidden;裁剪图片*/
+  margin: 5px;
+}
+.login-b a {
+  display: inline-block;
+  /* box-sizing: border-box; */
+  margin-right: 3px; 
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  border: 2px solid #e01222;
+  text-align: center;
+  color: #e01222;
+  font-weight: 500;
+}
+.login-b a:hover{
+  background-color: #e01222;
+  color: #fff;
+}
+
+.news {
+  height: 155px;
+  border-bottom: 1px solid #ccc;
+  padding: 7px 13px;
+  box-sizing: border-box;/*消除影响*/
+}
+.news-t {
+  width: 100%;
+  height: 19px;
+  border-bottom: 1px solid #ccc;
+}
+.news-t li{
+  float: left;
+  height: 17px;
+  line-height: 17px;
+
+}
+.news-t li a {
+  line-height: 17px;
+  color: #333;
+  font-weight: 500;
+}
+.news-t .li {
+  width: 1px;
+  height: 15px;
+  margin: 2px 16px 2px 12px;
+  background-color: #ccc;
+}
+.news-t .li2{
+  width: 63px;
+} 
+.news-t a:hover {
+  border-bottom: 2px solid red;
+}
+
+
+.news-b{
+  padding: 20px 0px;
+}
+.news-b li {
+  font-size: 12px;
+  line-height: 23px;
+  white-space: nowrap;/*强制一行显示*/
+}
+.expen {
+  height: 208px;
+  overflow: hidden;
+}
+.expen ul {
+  width: 195px;/*ul是190 但是li宽度超过190 放不开4个li 所以ul加宽度*/
+}
+.expen li {
+  width: 47px;
+  height: 69px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  float: left;
+
+}
+.expen li {
+  text-align: center;
+}
+.expen li i {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: url(../images/sprite_fs@1x.png) no-repeat 11px -72px;
+}
+.expen li:nth-child(2) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat 11px -29px;
+}
+.expen li:nth-child(3) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -33px -73px;
+}
+.expen li:nth-child(4) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -77px 15px;
+}
+.expen li:nth-child(5) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -77px -28px;
+}
+.expen li:nth-child(6) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat 12px 15px;
+}
+.expen li:nth-child(7) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -32px -28px;
+}
+.expen li:nth-child(8) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -78px -72px;
+}
+.expen li:nth-child(9) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -120px 15px;
+}
+.expen li:nth-child(10) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -120px -30px;
+}
+.expen li:nth-child(11) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -120px -73px;
+}
+.expen li:nth-child(12) i {
+  background: url(../images/sprite_fs@1x.png) no-repeat -33px 15px;
+}
